@@ -7,22 +7,8 @@
 /*=========================================== 
  * Importing CSS Libraries
  *===========================================*/
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block; }
 
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block; }
 
 audio:not([controls]) {
@@ -38,11 +24,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   font-family: sans-serif; }
 
 body {
@@ -130,7 +112,10 @@ sub {
   bottom: -0.25em; }
 
 img {
-  border: 0; }
+  border: 0;
+  margin: auto;    
+  display: block;
+}
 
 svg:not(:root) {
   overflow: hidden; }
@@ -208,10 +193,13 @@ table {
  * Global Styles
  */
 html {
-  font-size: 15px; }
+  font-size: 15px; 
+  display: block;
+  width: 100%;
+}
 
 body {
-  color: #8e9ca5;
+  color: #656f75;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.5; }
@@ -238,6 +226,12 @@ address {
 
 p {
   margin-top: 0; }
+
+.lab-title {
+  font-size: 5em;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 1px 0 #000, 1px 0px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 4px 4px 3px #000;
+}
 
 form input, form textarea, form select {
   outline: none;
@@ -312,16 +306,17 @@ form input[type="submit"], form button, form input[type="reset"] {
     height: 0; }
 
 .row {
-  margin-left: -20%;
-  margin-right: -20%;
-  *zoom: 1; 
-  display: flex;}
-  .row:after {
+  margin: auto;
+  *zoom: 1;
+}
+
+.row:after {
     content: " ";
     clear: both;
     display: block;
     overflow: hidden;
-    height: 0; }
+    height: 0;
+}
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
@@ -1191,7 +1186,7 @@ height:100%;
     padding: 20px; }
     .main-navigation .menu-toggle:hover, .main-navigation .menu-toggle:active {
       color: #69acc7; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1220px) {
       .main-navigation .menu-toggle {
         display: block; } }
   .main-navigation .menu {
@@ -1205,7 +1200,7 @@ height:100%;
       display: block;
       overflow: hidden;
       height: 0; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1220px) {
       .main-navigation .menu {
         display: none; } }
     .main-navigation .menu .menu-item {
@@ -1603,7 +1598,7 @@ ol.circle {
     margin-bottom: 30px; }
     .project-list .project:nth-child(3n+1) {
       clear: both; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1220px) {
       .project-list .project {
         width: 50%; }
         .project-list .project:nth-child(3n+1) {
