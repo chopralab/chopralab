@@ -7,22 +7,8 @@
 /*=========================================== 
  * Importing CSS Libraries
  *===========================================*/
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block; }
 
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block; }
 
 audio:not([controls]) {
@@ -38,17 +24,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   font-family: sans-serif; }
 
 body {
-  margin: 0; 
-    overflow-x: hidden;
-    width: 100%;}
+  margin: 0; }
 
 a {
   background: transparent; }
@@ -132,7 +112,10 @@ sub {
   bottom: -0.25em; }
 
 img {
-  border: 0; }
+  border: 0;
+  margin: auto;    
+  display: block;
+}
 
 svg:not(:root) {
   overflow: hidden; }
@@ -210,10 +193,13 @@ table {
  * Global Styles
  */
 html {
-  font-size: 15px; }
+  font-size: 15px; 
+  display: block;
+  width: 100%;
+}
 
 body {
-  color: #8e9ca5;
+  color: #656f75;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.5; }
@@ -240,6 +226,12 @@ address {
 
 p {
   margin-top: 0; }
+
+.lab-title {
+  font-size: 5em;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 1px 0 #000, 1px 0px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 4px 4px 3px #000;
+}
 
 form input, form textarea, form select {
   outline: none;
@@ -314,27 +306,25 @@ form input[type="submit"], form button, form input[type="reset"] {
     height: 0; }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;}
-  
-  .row:after {
+}
+
+.row:after {
     content: " ";
     clear: both;
     display: block;
     overflow: hidden;
-    height: 0; }
+    height: 0;
+}
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   /*height: 100%;*/
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
@@ -1197,7 +1187,7 @@ height:100%;
     padding: 20px; }
     .main-navigation .menu-toggle:hover, .main-navigation .menu-toggle:active {
       color: #69acc7; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1220px) {
       .main-navigation .menu-toggle {
         display: block; } }
   .main-navigation .menu {
@@ -1211,7 +1201,7 @@ height:100%;
       display: block;
       overflow: hidden;
       height: 0; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1220px) {
       .main-navigation .menu {
         display: none; } }
     .main-navigation .menu .menu-item {
@@ -1281,34 +1271,21 @@ height:100%;
       height: 0; }
     .hero .slides li {
       width: 100%;
-  
       margin-right: -100%;
       float: left;
       min-height: 720px;
+      padding-bottom: 100px;
       background-size: cover; }
   .hero .slide-content {
     text-align: center;
     padding-top: 300px;
     color: white;
     width: 80%;
-    margin: 0 auto; 
-}
+    margin: 0 auto; }
     .hero .slide-content .slide-title {
       font-size: 60px;
-     
-      font-weight: 300; 
-      text-shadow:
-		-0.5px -0.5px 0 #000,
-		0.5px -0.5px 0 #000,
-		-0.5px 0.5px 0 #000,
-		0.5px 0.5px 0 #000;}
-    .slide-subtitle {
-      font-size: 2em;
-      text-shadow:
-		-0.5px -0.5px 0 #000,
-		0.5px -0.5px 0 #000,
-		-0.5px 0.5px 0 #000,
-		0.5px 0.5px 0 #000;}
+      font-size: 4em;
+      font-weight: 300; }
     .hero .slide-content p {
       font-size: 24px;
       font-size: 1.6em; }
@@ -1359,30 +1336,6 @@ height:100%;
               -ms-transform: scale(1);
                   transform: scale(1); }
 
-
-/* The hero image */
-.hero-image {
-    background-image: url("images/location/drug_discovery_building.jpg");
-    /* Set a specific height */
-    height: 50%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
 .page-head {
   background-size: cover;
   padding: 50px 0;
@@ -1398,8 +1351,7 @@ height:100%;
     font-size: 1.2em; }
 
 .fullwidth-block {
-  padding: 2%;
-  max-width:100%; }
+  padding: 50px 0; }
 
 .section-title {
   font-size: 30px;
@@ -1417,8 +1369,8 @@ height:100%;
   Height:95%;}
   .feature .feature-image {
     margin-bottom: 20px;
-    max-width: 100%; 
-    height: auto; }
+    max-height: 100%;
+    max-width: 100%;  }
   .feature .feature-title {
     font-size: 30px;
     font-size: 2em;
@@ -1647,7 +1599,7 @@ ol.circle {
     margin-bottom: 30px; }
     .project-list .project:nth-child(3n+1) {
       clear: both; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1220px) {
       .project-list .project {
         width: 50%; }
         .project-list .project:nth-child(3n+1) {
@@ -1764,26 +1716,3 @@ figure {
     border-bottom: 1px solid #edf2f4; }
     .arrow-list.has-border li:last-child {
       border-bottom: none; }
- 
-/* Responsive iFrame */
-.googleCalendar{
-  position: relative;
-  height: 0;
-  width: 90%;
-  padding-bottom: 50%;
-  left:5%;
-}
-
-.googleCalendar iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  top:8em;
-}
-.single_banner {
-width:100%;
-
-}
-
