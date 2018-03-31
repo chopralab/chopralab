@@ -247,6 +247,29 @@ form input[type="submit"], form button, form input[type="reset"] {
 /*
  * Reusable Components Style
  */
+
+.colophon {
+  text-align: center;
+}
+
+.padding {
+  padding: 30px;
+}
+
+.background-image {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.gCal iframe {
+  display: block;
+  width: 92vw;
+  height: 80vh;
+  border: solid 1px #777;
+  margin: 0;
+}
+
 .button, form input[type="submit"], form button, form input[type="reset"] {
   background: #e7edf1;
   display: inline-block;
@@ -1121,10 +1144,8 @@ form input[type="submit"], form button, form input[type="reset"] {
   position: relative;
   z-index: 9; }
   .site-header.collapsed-nav {
-    position: absolute;
-    /*top: 50px;*//*moves the header 50px down*/
+    position: relative;
     width: 100%;
-
     left: 0; }
 
 .header-bar {
@@ -1224,7 +1245,7 @@ height:100%;
   padding: 30px;
   clear: both;
   display: none; }
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 1220px) {
     .mobile-navigation {
       display: none !important; } }
   .mobile-navigation .menu {
@@ -1269,12 +1290,12 @@ height:100%;
       width: 100%;
       margin-right: -100%;
       float: left;
-      min-height: 720px;
+      min-height: 350px;
       padding-bottom: 100px;
       background-size: cover; }
   .hero .slide-content {
+    padding-top: 100px;
     text-align: center;
-    padding-top: 300px;
     color: white;
     width: 80%;
     margin: 0 auto; }
