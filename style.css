@@ -302,8 +302,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
-  padding-right: 10px;
-  *zoom: 1; }
+  padding-right: 10px; }
   .container:after {
     content: " ";
     clear: both;
@@ -1278,7 +1277,6 @@ height:100%;
         border-bottom: none; }
 
 .hero {
-  *zoom: 1;
   position: relative; }
   .hero:after {
     content: " ";
@@ -1287,8 +1285,7 @@ height:100%;
     overflow: hidden;
     height: 0; }
   .hero .slides {
-    list-style: none;
-    *zoom: 1; }
+    list-style: none; }
     .hero .slides:after {
       content: " ";
       clear: both;
