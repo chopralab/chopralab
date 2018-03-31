@@ -248,7 +248,16 @@ form input[type="submit"], form button, form input[type="reset"] {
  * Reusable Components Style
  */
 
+.logos {
+  margin: auto;
+}
+
+.logos img {
+  display: inline;
+}
+
 .colophon {
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -1379,7 +1388,7 @@ height:100%;
 .feature {
   margin-bottom: 30px;
   text-align: center;
-  border: 1px solid #e1e8ec;
+  border: 1px solid #ced4d6;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
@@ -1688,7 +1697,7 @@ figure {
  * Footer Styles
  */
 .site-footer {
-  padding: 50px 0; }
+  padding-top: 50px; }
 
 .widget {
   margin-bottom: 30px; }
