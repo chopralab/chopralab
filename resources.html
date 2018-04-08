@@ -13,6 +13,10 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+
+		<!-- Photoswipe -->
+		<link rel="stylesheet" type="text/css" href="js/photoswipe.css">
+		<link rel="stylesheet" href="js/default-skin/default-skin.css">
 		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
@@ -52,9 +56,9 @@
 				</div>
 			</header>
 
-			<div class="page-head" data-bg-image="images/template/page-head-2.jpg">
+			<div class="page-head" data-bg-image="images/homepage/bv_2_abeta.png">
 				<div class="container">
-					<h2 class="page-title">Resources</h2>
+					<h2 class="page-title">Our Resources</h2>
 				</div>
 			</div>
 
@@ -281,51 +285,100 @@
 							<img src="images/template/icon-medicine.png" alt="" class="icon">
 							<h3 style="margin: 0">Experimental</h3>
 							<div class="table-responsive">
-								<h2 style="margin: 0; padding-top: 1em;">Cell Biology</h2>
-								<table summary="FP">
-									<tbody>
-										<tr><td>Thermo Scientific™ Sorvall™ Legend™ XT/XF Centrifuge Series</td></tr>
-										<tr><td>Beckman Coulter Vi-CELL™ Cell Viability Analyzer</td></tr>
-										<tr><td>Thermo Scientific™ 1300 Series Class II, Type A2 Biological Safety Cabinet</td></tr>
-										<tr><td>Thermo Scientific™ Forma™ Steri-Cycle™ i160 CO2 Incubator with Stainless Steel Chamber | VWR Cryopro</td></tr>
-										<tr><td>Leica DMIL LED Inverted Microscope</td></tr>
-									</tbody>
-								</table>
+								<h2 class="text-center" style="padding: 0.2em;">Cell Biology</h2>
+								<div class="gallery text-center" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/centrifuge.jpg" itemprop="contentUrl" data-size="366x244">Thermo Scientific™ Sorvall™ Legend™ XT/XF Centrifuge Series</a>
+										<figcaption itemprop="caption description">Thermo Scientific™ Sorvall™ Legend™ XT/XF Centrifuge Series</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/cell_counter.JPG" itemprop="contentUrl" data-size="302x244">Beckman Coulter Vi-CELL™ Cell Viability Analyzer</a>
+										<figcaption itemprop="caption description">Beckman Coulter Vi-CELL™ Cell Viability Analyzer</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/hood_1.jpg" itemprop="contentUrl" data-size="366x244">Thermo Scientific™ 1300 Series Class II, Type A2 Biological Safety Cabinet</a>
+										<figcaption itemprop="caption description">Thermo Scientific™ 1300 Series Class II, Type A2 Biological Safety Cabinet</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/incubator_dower.jpg" itemprop="contentUrl" data-size="364x244">Thermo Scientific™ Forma™ Steri-Cycle™ i160 CO2 Incubator with Stainless Steel Chamber | VWR Cryopro</a>
+										<figcaption itemprop="caption description">Thermo Scientific™ Forma™ Steri-Cycle™ i160 CO2 Incubator with Stainless Steel Chamber | VWR Cryopro</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/microscope1.jpg" itemprop="contentUrl" data-size="366x244">Leica DMIL LED Inverted Microscope</a>
+										<figcaption itemprop="caption description">Leica DMIL LED Inverted Microscope</figcaption>
+									</figure>
+								</div>
 							</div>
 							<div class="table-responsive">
-								<h2 style="margin: 0; padding-top: 1em;">Organic Chemistry</h2>
-								<table summary="FP">
-									<tbody>
-										<tr><td>CombiFlash® Rf+ Lumen</td></tr>
-										<tr><td>CombiFlash® Rf+ Lumen</td></tr>
-										<tr><td>1L Rotary Evaporator N-1110V-W</td></tr>
-										<tr><td>VWR Ultrasonic Cleaner</td></tr>
-									</tbody>
-								</table>
+								<h2 class="text-center" style="padding: 0.2em;">Organic Chemistry</h2>
+								<div class="gallery text-center" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/combiflash.jpg" itemprop="contentUrl" data-size="365x244">CombiFlash® Rf+ Lumen</a>
+										<figcaption itemprop="caption description">CombiFlash® Rf+ Lumen</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/lypholizer.jpg" itemprop="contentUrl" data-size="365x244">CombiFlash® Rf+ Lumen</a>
+										<figcaption itemprop="caption description">CombiFlash® Rf+ Lumen</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/rotovap.jpg" itemprop="contentUrl" data-size="366x244">1L Rotary Evaporator N-1110V-W</a>
+										<figcaption itemprop="caption description">1L Rotary Evaporator N-1110V-W</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/sonicator.jpg" itemprop="contentUrl" data-size="366x244">VWR Ultrasonic Cleaner</a>
+										<figcaption itemprop="caption description">VWR Ultrasonic Cleaner</figcaption>
+									</figure>
+								</div>
 							</div>
 							<div class="table-responsive">
-								<h2 style="margin: 0; padding-top: 1em;">Lab and Office Space</h2>
-								<table summary="FP">
-									<tbody>
-										<tr><td>Rm 263: Visualization Room</td></tr>
-										<tr><td>Open Office Space (Approx 8 desks)</td></tr>
-										<tr><td>Rm 274A: Chemical Storeroom</td></tr>
-										<tr><td>Rm 274: Organic Synthesis</td></tr>
-										<tr><td>Reaction Setup</td></tr>
-									</tbody>
-								</table>
+								<h2 class="text-center" style="padding: 0.2em;">Chemical Biology</h2>
+								<div class="gallery text-center" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/eva.jpg" itemprop="contentUrl" data-size="408x244">Perkin Elmer/Packard MultiPROBE II Plus HT</a>
+										<figcaption itemprop="caption description">Perkin Elmer/Packard MultiPROBE II Plus HT</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/nanodrop.jpg" itemprop="contentUrl" data-size="365x244">NanoDrop™ 3300 Fluorospectrometer</a>
+										<figcaption itemprop="caption description">NanoDrop™ 3300 Fluorospectrometer</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/ph_potentiometer.jpg" itemprop="contentUrl" data-size="365x244">Fisher Scientific™ accumet™ AE150 pH Benchtop Meter 3-in-1</a>
+										<figcaption itemprop="caption description">Fisher Scientific™ accumet™ AE150 pH Benchtop Meter 3-in-1</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/qPCR.jpg" itemprop="contentUrl" data-size="366x244">Chai's Open Source Real-Time PCR Thermocycler</a>
+										<figcaption itemprop="caption description">Chai's Open Source Real-Time PCR Thermocycler</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/wallie_with_laptop.jpg" itemprop="contentUrl" data-size="366x244">Opentrons OT-One S Pro</a>
+										<figcaption itemprop="caption description">Opentrons OT-One S Pro</figcaption>
+									</figure>
+								</div>
 							</div>
 							<div class="table-responsive">
-								<h2 style="margin: 0; padding-top: 1em;">Chemical Biology</h2>
-								<table summary="FP">
-									<tbody>
-										<tr><td>Perkin Elmer/Packard MultiPROBE II Plus HT</td></tr>
-										<tr><td>NanoDrop™ 3300 Fluorospectrometer</td></tr>
-										<tr><td>Fisher Scientific™ accumet™ AE150 pH Benchtop Meter 3-in-1</td></tr>
-										<tr><td>Chai's Open Source Real-Time PCR Thermocycler</td></tr>
-										<tr><td>Opentrons OT-One S Pro</td></tr>
-									</tbody>
-								</table>
+								<h2 class="text-center" style="padding: 0.2em;">Lab and Office Space</h2>
+								<div class="gallery text-center" itemscope itemtype="http://schema.org/ImageGallery">
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/visualization_room.jpg" itemprop="contentUrl" data-size="366x244">Rm 263: Visualization Room</a>
+										<figcaption itemprop="caption description">Rm 263: Visualization Room</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/desks.jpg" itemprop="contentUrl" data-size="366x244">Office Space</a>
+										<figcaption itemprop="caption description">Office Space</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/chemical_storageroom.jpg" itemprop="contentUrl" data-size="366x244">Rm 274A: Chemical Storeroom</a>
+										<figcaption itemprop="caption description">Rm 274A: Chemical Storeroom</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/joydeb_side_bench.jpg" itemprop="contentUrl" data-size="366x244">Rm 274: Organic Synthesis</a>
+										<figcaption itemprop="caption description">Rm 274: Organic Synthesis</figcaption>
+									</figure>
+									<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+										<a href="images/resources/reaction_setup.jpg" itemprop="contentUrl" data-size="366x244">Reaction Setup</a>
+										<figcaption itemprop="caption description">Reaction Setup</figcaption>
+									</figure>
+								</div>
 							</div>
 						</div>
 						
@@ -343,19 +396,19 @@
 											<th style="text-align: left;">Description</th>
 										</tr>
 										<tr>
-											<td>CANDESIGN</td>
+											<td><a href="candesign.html">CANDESIGN</a></td>
 											<td><b>C</b>omputational <b>AN</b>alytics for <b>DESIGN</b> - A software package capable of novel drug design.</td>
 										</tr>
 										<tr>
-											<td>CANDIG</td>
+											<td><a href="candig.html">CANDIG</a></td>
 											<td><b>C</b>rowdsourcing <b>A</b>lgorithms to ide<b>N</b>tify Drugs via <b>I</b>nteractive <b>G</b>aming - Crowdsource disease-specific targets to identify and verify drugs based on our docking and design program as a 3D virtual reality game.</td>
 										</tr>
 										<tr>
-											<td>CANDO</td>
+											<td><a href="cando.html">CANDO</a></td>
 											<td><b>C</b>omputational <b>A</b>nalytics of <b>N</b>ovel <b>D</b>rug repurposing <b>O</b>pportunities - a unique platform to discover therapeutics with higher efficiency, lowered cost, and increased success rates, compared to current approaches.</td>
 										</tr>
 										<tr>
-											<td>CANDOCK</td>
+											<td><a href="candock.html">CANDOCK</a></td>
 											<td><b>C</b>omputational <b>AN</b>alytics based <b>DOCK</b>ing - A fragment based docking method used for small molecule, protein-protein, protein-NA docking.</td>
 										</tr>
 									</tbody>
@@ -406,23 +459,72 @@
 					</div>
 				</div>
 
+			<!-- Root element of PhotoSwipe. Must have class pswp. -->
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+				<!-- Background of PhotoSwipe. 
+						         It's a separate element as animating opacity is faster than rgba(). -->
+				<div class="pswp__bg"></div>
+				<!-- Slides wrapper with overflow:hidden. -->
+				<div class="pswp__scroll-wrap">
+					<!-- Container that holds slides. 
+						            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+						            Don't modify these 3 pswp__item elements, data is added later on. -->
+					<div class="pswp__container">
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+					</div>
+					<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+					<div class="pswp__ui pswp__ui--hidden">
+						<div class="pswp__top-bar">
+							<!--  Controls are self-explanatory. Order can be changed. -->
+							<div class="pswp__counter"></div>
+							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+							<button class="pswp__button pswp__button--share" title="Share"></button>
+							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+							<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+							<!-- element will get class pswp__preloader--active when preloader is running -->
+							<div class="pswp__preloader">
+								<div class="pswp__preloader__icn">
+									<div class="pswp__preloader__cut">
+										<div class="pswp__preloader__donut"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+							<div class="pswp__share-tooltip"></div>
+						</div>
+						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+						</button>
+						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+						</button>
+						<div class="pswp__caption">
+							<div class="pswp__caption__center"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3">
-							<div class="widget">
+						<div class="col-md-3 col-xs-12">
+							<div class="widget text-center">
 								<h3 class="widget-title">Our address</h3>
 								<strong>Purdue Institute for Drug Discovery</strong>
 								<address>720 Clinic Dr, West Lafayette, IN, 47907</address>
-																<p> Office: DRUG 261 | Lab: DRUG 210</p>
-								<a href="tel:+1 765 496 6108"> (765)-496-6108</a> <br>
+								<p> Office: DRUG 261 | Lab: DRUG 210</p>
+								<a href="tel:+1 765 496 6108"> (765)-496-6108</a>
+								<br>
 								<a href="gchopra@purdue.edu">gchopra@purdue.edu</a>
 							</div>
 						</div>
-						<div class="col-xs-6">
-							<div class="logos">
+						<div class="col-md-6 col-xs-12">
+							<div class="logos text-center">
 								<a href="https://www.purdue.edu/discoverypark/drug-discovery/" target="_blank">
 									<img alt="Affiliate" height="125" src="images/Drug Discovery logo.jpg" width="157">
 								</a>
@@ -437,30 +539,43 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="widget">
+						<div class="col-md-3 col-xs-12">
+							<div class="widget text-center">
 								<h3 class="widget-title">Social media</h3>
 								<p>Feel free to follow our lab on twitter and watch videos on our youtube channel</p>
 								<div class="social-links">
-									
-									<a href="https://twitter.com/chopralab?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
-						
-									<a href="https://www.youtube.com/channel/UCDmf3igPapcwupzUKtpPVxQ"><i class="fa fa-youtube"></i></a>
+			
+									<a href="https://twitter.com/chopralab?lang=en" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+			
+									<a href="https://www.youtube.com/channel/UCDmf3igPapcwupzUKtpPVxQ">
+										<i class="fa fa-youtube"></i>
+									</a>
 								</div>
 							</div>
 						</div>
-					</div> <!-- .row -->
-
-					<p class="colophon">
-						Copyright © 2018, Gaurav Chopra Laboratory
-							</br>
-						<a target="_blank" href="https://purdue.edu/">Purdue University</a> | Contact the College of Science at <a href="mailto:sciencehelp@purdue.edu">sciencehelp@purdue.edu</a> for trouble accessing this page.
-							</br>
-							Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved</p>
-				</div> <!-- .container -->
+						<div class="col-xs-12">
+							<p class="text-center">
+								Copyright © 2018, Gaurav Chopra Laboratory
+								</br>
+								<a target="_blank" href="https://purdue.edu/">Purdue University</a> | Contact the College of Science at
+								<a href="mailto:sciencehelp@purdue.edu">sciencehelp@purdue.edu</a> for trouble accessing this page.
+								</br>
+								Designed by
+								<a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved</p>
+						</div>
+					</div>
+				</div>
 			</footer>
 		</div>
 
+		<!-- PhotoSwipe -->
+		<script src="js/photoswipe-ui-default.min.js"></script>
+		<script src="js/photoswipe.js"></script>
+		<script src="js/start.js"></script>
+
+		<!-- Scripts -->
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>

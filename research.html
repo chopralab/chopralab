@@ -53,7 +53,7 @@
 				</div>
 			</header>
 
-			<div class="page-head" data-bg-image="images/template/page-head-3.jpg">
+			<div class="page-head" data-bg-image="images/homepage/priya_hmc3_image.png">
 				<div class="container">
 					<h2 class="page-title">Our Research</h2>
 				</div>
@@ -62,122 +62,196 @@
 			<main class="main-content">
 				<div class="fullwidth-block">
 					<div class="container">
-						<h2 class="section-title">Eiusmod tempor incididunt labore</h2>
-						<p>Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt culpa. omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p> 
+						<div class="row boxed-icon" id="overview">
+							<h1>Research Overview</h1>
+							<h3><strong>Interactome Based Immunomodulatory Drug Design</strong></h3>
+							<p>Traditional virtual or high-throughput screening approaches for drug discovery are highly specific to screening compound
+								libraries against a single biological target of interest. It often results in ineffective leads, in that, even after an
+								expensive lead optimization process, the clinical candidates are often non-efficacious or unsafe human drugs. The most effective
+								drugs in humans (e.g. Aspirin® or Gleevec®) inevitably interact with multiple proteins, a feature that traditional models
+								based on single target drugs fail to take into account. Currently, there are no high-throughput experimental methods to
+								look at all biochemical interactions of a small molecule compound in an organism (human) that is much needed to ascertain
+								both toxicity and efficacy of a drug. Furthermore, the synthesis of compound libraries explores diverse chemical space that
+								is unrelated to the disease of interest with no input from disease specific biological targets and antitargets to guide
+								synthesis. Recognizing this unexplored area, the overarching goal of our research program is to develop interactome based
+								computational chemistry techniques and bioanalytical assays, (1) to design, synthesize and verify disease specific multitargeted
+								immunomodulatory drugs, and (2) enable immunomodulation by using cell-drug conjugates as drugs.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Towards this goal, we have developed a drug discovery, design, and repurposing
+								platform&nbsp;that analyzes compound-protein structural interaction signatures across multiple proteomes from different
+								organisms to determine drug behavior. The platform implements a modeling pipeline that generates an interaction between
+								‘all’ (currently 3,733) human ingestible drugs and ‘all’ (currently 48,278) proteins using our interactome flexible docking
+								program to compute ~1 billion proteome-compound interactions. Our hypothesis is that similar set of interactions across
+								the representative universe of protein structures determine drug behavior by inferring homology of compound/drug behavior
+								at a proteomic level. We, along with our collaborators, have prospectively validated our predictions using
+								<i>in vitro</i> and
+								<i>in vivo </i>preclinical studies for more than 10 different diseases including immunological, metabolic, infectious and genetic
+								indications (castration resistant prostate cancer, type 1 diabetes, dental caries, dengue, herpes, drug resistant tuberculosis,
+								cirrhosis, etc.), yielding an overall rate of ~35% that are comparable or better than the corresponding treatment for the
+								disease.</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We have used our approach for all 1439 known diseases and indications to
+								discover disease-disease relationships (e.g. overlapping mechanisms between Alzheimer disease with diabetes, heart failure,
+								inflammation, and prostate cancer with breast cancer, hypertension and inflammation, among others) that are used to identify
+								novel targets and antitargets. Our research on interactome modeling and verification will contribute to the understanding
+								that diseases are heterogeneous combination of other diseases and indications with overlapping mechanisms to discover and
+								design novel therapeutics.</p>
+							<p>Projects in our lab are divided with the following subgroups:</p>
+						</div>
+						
+						<div class="row boxed-icon" id="IM">
+							<h1>Interactome Methods</h1>
+							<h3>
+								<strong>Flexible Docking And Design Software: Candock</strong>
+							</h3>
+							<p align="center">
+								<img alt="interactome_methods" height="314" src="images/research/interactome_methods.PNG"
+								style="display: block; margin-left: auto; margin-right: auto;" width="795">
+							</p>
+							<p>We have developed a hierarchical flexible docking with design software (candock) that takes multiple biomolecules and biomolecular
+								interfaces (protein, protein/protein, protein/nucleic acids, etc) along with a database of small molecules to generate a
+								profile of the interaction of a compound with all proteins (interactome). We use this interactome profile, as a surrogate
+								of compound function and activity for drug repurposing and discovery, and as a guide to do interactome based drug design.
+								The potential energy functions computing protein-compound interactions are derived from statistics on large-scale compound
+								libraries resulting in hundreds of atom types. This results in selection of atom types based on the chemical make up of
+								the binding pocket to suggest changes to the lead. Future development of these functions will include polarizable components
+								to complement the current atom types, as well as, new statistical energy functions for improved accuracy. We are implementing
+								a faster version of this software that takes advantage of General Purpose Graphics Processing Units (GPGPU). We are also
+								in the process of deploying web based applications that will enable free and public use of all features of our software.</p>
+							<h3><b>Bioanalytical Interactome Assays</b></h3>
+							<div class="col-xs-12">
+								<img alt="interactome assay" height="265" src="images/research/interactome_assay.png" width="350">
+							</div>
+							<p>We are developing new bioanalytical chemistry methods for an ‘interactome assay’ to complement our computational docking
+								and design method. These tools will experimentally measure the interaction profile of a mixture of proteins and compounds.
+								These assays will also be used to quantify biomolecular interactions in cell mixture environments (micro-interactome) to
+								guide and verify our cell responsive drug predictions and designs. We also plan to use these techniques to develop biosensors
+								for the diseases of our interest.</p>
+						</div>
+						<div class="row boxed-icon" id="Neuro">
+							<h1>Neuroimmunology</h1>
+							<p align="center">&nbsp;
+								<img alt="neuroimmune" height="314" src="images/research/neuroimmuno.PNG" style="display: block; margin-left: auto; margin-right: auto;"
+								width="897">
+							</p>
+							<p>Till a few years ago, the brain was thought to be an "immune privilege" organ. Recent advancements have highlighted the crucial&nbsp;interaction
+								between the central nervous system and the immune system thereby creating new opportunities to explore the&nbsp;underlying&nbsp;disease
+								mechanisms in neurodegeneration.&nbsp;</p>
+							<p>Alzheimer's disease (AD)&nbsp;is the most common form of dementia and has&nbsp;affected more than 40 million people worldwide
+								(World&nbsp;Alzheimer Report 2015). We are currently focused on elucidating the immune suppressive mechanisms&nbsp;in AD.
+								Along with the&nbsp;amyloid-beta aggregates and neurofibrillary tau tangles, inflammation is also&nbsp;known to be a major&nbsp;pathological
+								hallmark of AD. Our efforts extend towards finding new ways to treat this devastating&nbsp;disease by discovering novel&nbsp;immunomodulatory
+								drugs and identifying&nbsp;novel&nbsp;targets for AD immune suppression. Specifically, we use our computational drug&nbsp;predictions&nbsp;
+								<i>in vitro</i>&nbsp;on&nbsp;primary neuron cultures and cell lines (e.g. SH-SY5Y cells) for drug testing, use&nbsp;CRISPR-Cas9
+								and shRNA technology for target identification, and humanized mouse models for&nbsp;
+								<i>in vivo</i>&nbsp;testing.&nbsp;&nbsp;</p>
+						</div>
 
-						<p>perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-					</div>
-				</div>
+						<div class="row boxed-icon" id="IDD">
+							<h1>Immunomodulatory Drug Design</h1>
+							<p align="center">
+								<img alt="imunomod drug design" height="196" src="images/research/immunomodularydd.png" width="944">
+							</p>
+							<p>The role of the immune system is essential to treatment of many diseases. Cancer immunotherapy has gained a lot of attention
+								in recent years. Almost all cancer drugs, either target the mechanisms to kill the tumor directly (anti-disease), or the
+								immunotherapeutic agents use mechanisms of the immune system to target cancer without affecting cancer directly. Our primary
+								goal is to design single chemical entities with dual action for anti-disease activity: target the anti-disease mechanisms
+								directly, as well as, alter the function of suppressive immune cell types for targeted disease-specific immunotherapy. Specifically,
+								our novel compounds designs and synthesis are based on anti-disease active compounds, that will change the phenotypic response
+								of&nbsp;suppressive&nbsp;immune cell types for targeted immunotherapy. As one example, the cell types we use are regulatory
+								T cells (Tregs) for type 1 diabetes and Alzheimer disease, and myeloid derived suppressor cells (MDSCs) for castration resistant
+								prostate cancer. We are collaborating with disease experts in the medical schools across the country to test these compounds
+								<i>in vivo,</i> after
+								<i>in vitro</i> validations are done in our laboratory. Some ongoing projects related to design and synthesis of immunomodulatory
+								compounds are to: (a) selectively enhance Tregs proliferation, (b) alter suppressive function of monocytic MDSCs derived
+								from the peritoneal cavity by targeting disease-specific upregulated genes in these cells.</p>
+							<p align="center">&nbsp;
+								<img alt="cell drug conjugate" height="146" src="images/research/conjugate.png" width="230">
+							</p>
+							<p>We have also initiated a new direction to develop cell-drug bio-conjugation chemistry to perturb immunological tolerance
+								and use ‘cells as drugs’ for targeted immunotherapy.</p>
+						</div>
 
-				<div class="fullwidth-block">
-					<div class="container">
-						<div class="project-list">
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/template/project-1.jpg" alt="Project"></figure>
-									<h3 class="project-title">Tempora incidunt labore dolore</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="#" class="button">Learn more</a>
-								</div>
-							</div>
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/template/project-2.jpg" alt="Project"></figure>
-									<h3 class="project-title">Tempora incidunt labore dolore</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="#" class="button">Learn more</a>
-								</div>
-							</div>
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/template/project-3.jpg" alt="Project"></figure>
-									<h3 class="project-title">Tempora incidunt labore dolore</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="#" class="button">Learn more</a>
-								</div>
-							</div>
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/template/project-4.jpg" alt="Project"></figure>
-									<h3 class="project-title">Tempora incidunt labore dolore</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="#" class="button">Learn more</a>
-								</div>
-							</div>
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/template/project-5.jpg" alt="Project"></figure>
-									<h3 class="project-title">Tempora incidunt labore dolore</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="#" class="button">Learn more</a>
-								</div>
-							</div>
-							<div class="project">
-								<div class="project-content">
-									<figure class="project-image"><img src="images/template/project-6.jpg" alt="Project"></figure>
-									<h3 class="project-title">Tempora incidunt labore dolore</h3>
-									<p>Dignissimos ducimus blanditiis deleniti atque corrupti quos dolores et quas molestias.</p>
-									<a href="#" class="button">Learn more</a>
-								</div>
-							</div>
+						<div class="row boxed-icon" id="MDD">
+							<h1>Multi Player Drug Discovery</h1>
+							<p align="center">
+								<img alt="multiplayer" height="300" src="images/research/multiplayer.PNG" style="display: block; margin-left: auto; margin-right: auto;"
+								width="904">
+							</p>
+							<p>A challenge in computational drug discovery and design is a requirement for large amount of computational power to include
+								full flexibility of the receptor and ligand. We want to involve citizens to play a game where they can make moves to change
+								the conformation of the drug molecule and the protein target to get the best score.&nbsp;We have teamed up with the Envision
+								Center at Purdue, along with some of the computer science undergraduates in our lab, to develop a virtual reality based
+								“drug discovery game” guided by our docking program that identifies how a drug fits inside a binding pocket of a protein
+								target and the best fragments to select for modifications to the ligand relevant to the target of interest. This involves
+								both education and science, where we will give out drug targets currently active in the lab to the community and the best
+								prediction (either from the computational prediction or the citizen scientist) will be tested for their chosen targets of
+								interest. If the results are experimentally validated and we write a paper based on this prediction, the person who identified
+								the best hit will be a co-author on the paper.&nbsp; We are also developing automated resources (our raspberry pi powered
+								liquid handling robot) to use for validation of compound-protein binding predictions. This is a huge undertaking and we
+								hope this project can become a community-wide initiative. We welcome other labs to join hands for target selection and experimental
+								verification to enhance science and education to spread the love for chemistry.</p>
 						</div>
 					</div>
 				</div>
-
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3">
-							<div class="widget">
+						<div class="col-md-3 col-xs-12">
+							<div class="widget text-center">
 								<h3 class="widget-title">Our address</h3>
-								<strong>Company name INC</strong>
-								<address>592 Avenue Street, Los Angeles, CA 90012</address>
-								<a href="tel:+1 800 931 812">+1 800 931 812</a> <br>
-								<a href="mailto:office@companyname.com">office@companyname.com</a>
+								<strong>Purdue Institute for Drug Discovery</strong>
+								<address>720 Clinic Dr, West Lafayette, IN, 47907</address>
+								<p> Office: DRUG 261 | Lab: DRUG 210</p>
+								<a href="tel:+1 765 496 6108"> (765)-496-6108</a>
+								<br>
+								<a href="gchopra@purdue.edu">gchopra@purdue.edu</a>
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Press room</h3>
-								<ul class="arrow-list">
-									<li><a href="#">Accusantium doloremque</a></li> 
-									<li><a href="#">Laudantium totam aperiam</a></li>
-									<li><a href="#">Eaque ipsa quae illo inventore</a></li> 
-									<li><a href="#">Veritatis et quasi architecto</a></li>
-									<li><a href="#">Vitae dicta sunt explicabo</a></li>
-								</ul>
+						<div class="col-md-6 col-xs-12">
+							<div class="logos text-center">
+								<a href="https://www.purdue.edu/discoverypark/drug-discovery/" target="_blank">
+									<img alt="Affiliate" height="125" src="images/Drug Discovery logo.jpg" width="157">
+								</a>
+								<a href="https://www.cancerresearch.purdue.edu" target="_blank">
+									<img alt="Affiliate" height="137" src="images/PCCR logo.svg" width="282">
+								</a>
+								<a href="https://www.purdue.edu/discoverypark/pillars/integrative-neuroscience-center/" target="_blank">
+									<img alt="Affiliate" height="118" src="images/PIIN.png" width="234">
+								</a>
+								<a href="https://www.purdue.edu/discoverypark/pillars/pi4d/" target="_blank">
+									<img alt="Affiliate" height="106" src="images/information_immunology_logo.jpg" width="200">
+								</a>
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Research summary</h3>
-								<ul class="arrow-list">
-									<li><a href="#">Accusantium doloremque</a></li> 
-									<li><a href="#">Laudantium totam aperiam</a></li>
-									<li><a href="#">Eaque ipsa quae illo inventore</a></li> 
-									<li><a href="#">Veritatis et quasi architecto</a></li>
-									<li><a href="#">Vitae dicta sunt explicabo</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="widget">
+						<div class="col-md-3 col-xs-12">
+							<div class="widget text-center">
 								<h3 class="widget-title">Social media</h3>
-								<p>Deserunt mollitia animi id est laborum dolorum fuga harum quidem rerum facilis.</p>
+								<p>Feel free to follow our lab on twitter and watch videos on our youtube channel</p>
 								<div class="social-links">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
+			
+									<a href="https://twitter.com/chopralab?lang=en" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+			
+									<a href="https://www.youtube.com/channel/UCDmf3igPapcwupzUKtpPVxQ">
+										<i class="fa fa-youtube"></i>
+									</a>
 								</div>
 							</div>
 						</div>
-					</div> <!-- .row -->
-
-					<p class="colophon">copyright 2014 Company name. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved</p>
-				</div> <!-- .container -->
+						<div class="col-xs-12">
+							<p class="text-center">
+								Copyright © 2018, Gaurav Chopra Laboratory
+								</br>
+								<a target="_blank" href="https://purdue.edu/">Purdue University</a> | Contact the College of Science at
+								<a href="mailto:sciencehelp@purdue.edu">sciencehelp@purdue.edu</a> for trouble accessing this page.
+								</br>
+								Designed by
+								<a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved</p>
+						</div>
+					</div>
+				</div>
 			</footer>
 		</div>
 
