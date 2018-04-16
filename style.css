@@ -1607,7 +1607,8 @@ ol.circle {
   margin-bottom: 30px; }
   @media screen and (max-width: 640px) {
     .boxed-icon {
-      padding-left: 30px; } }
+      padding-left: 10vw;
+      padding-right: 10vw; } }
   .boxed-icon .icon {
     position: absolute;
     left: 30px;
