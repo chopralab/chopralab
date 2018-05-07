@@ -244,6 +244,11 @@ form input[type="submit"], form button, form input[type="reset"] {
 /*
  * Reusable Components Style
  */
+ 
+.margin-center {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .text-center {
   text-align: center;
