@@ -254,6 +254,12 @@ form input[type="submit"], form button, form input[type="reset"] {
  * Reusable Components Style
  */
  
+ /* boxed-icon uses a really big size just for h3 */
+.cancel-template h3 {
+  font-size: 1.17em !important;
+  margin: 1em 0 !important;
+}
+
 .margin-center {
 	margin-left: auto;
 	margin-right: auto;
