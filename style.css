@@ -254,6 +254,13 @@ form input[type="submit"], form button, form input[type="reset"] {
  * Reusable Components Style
  */
  
+.chopra {
+  position: fixed !important;
+  left: 0 !important;
+  z-index: -1000 !important;
+  transform: scale(4) !important;
+}
+ 
  /* boxed-icon uses a really big size just for h3 */
 .cancel-template h3 {
   font-size: 1.17em !important;
