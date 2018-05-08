@@ -130,8 +130,13 @@ textarea {
   vertical-align: top; }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  border-collapse: separate;
+  border-spacing: 1em 0;
+}
+
+td {
+  padding: 0.3em;
+}
 
 /*
  * Global Styles
@@ -166,7 +171,7 @@ ul, ol {
   
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  margin: 0 0 20px;
+  margin: 0;
   line-height: normal; }
   
 a {
@@ -278,6 +283,16 @@ figcaption {
 
 .people-photo.small {
   width: 97%;
+}
+
+.funding img {
+  display: inline-block;
+  max-width: 40vw;
+  padding: 10px;
+}
+
+.funding p {
+  margin: 0;
 }
 
 .logos {
