@@ -1,0 +1,10 @@
+1. In _posts, create a file with the exact format of "%Y-%M-%D-title.markdown"
+2. In that file, copy the header below, with lines (if unsure check past posts):
+---
+layout: post
+title:  "Insert title here"
+categories: whatever you want separated by spaces
+---
+3. Use markdown to write your post, here's a handy cheat sheet below:
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+4. On the machine with jekyll installed, run "jekyll build --watch", if it isn't running already"
