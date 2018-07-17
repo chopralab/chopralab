@@ -10,40 +10,49 @@
 
 	<link rel="stylesheet" type="text/css" href="mint.css" />
 	
-	<!-- Empty script prevents "css explosion" on page load - https://bugs.chromium.org/p/chromium/issues/detail?id=332189 -->
-	<script> </script>
+	<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 </head>
 
 <body>
-    <div class="outer">
-        <div class="middle">
-            <div class="inner">
-                <video id="background" autoplay loop muted>
-					<source src="images/MINT/video.mp4" type="video/mp4">
-					Your browser does not support HTML5 video.
-				</video>
-				<div id="title">
-					<h1>MINT</h1>
-						</br>
-					<p>Molecular Interaction using New Technology</p>
-				</div>
-				<div id="forms">
-					<text>Download Now!</text>
-						</br>
-					<div class="flex">
-						<form action="#">
-							<button type="submit">Steam</button>
-						</form>
-						<form action="#">
-							<button type="submit">Play Store</button>
-						</form>
-					</div>
-				</div>
-				<div id="footer">
-					<p>A product by</p>&nbsp;<a href="http://chopralab.com" target="_blank">chopralab</a>
+	<div id="fullpage">
+		<div class="vert-center">
+			<div id="title">
+				<h1>MINT</h1>
+					</br>
+				<p>Molecular Interaction using New Technology</p>
+			</div>
+			
+			<div id="forms">
+				<h4>Download for</h4>
+				<div class="flex">
+					<form action="http://github.com/chopralab/MINT">
+						<button type="submit">Desktop</button>
+					</form>
+					<form action="#">
+						<button type="submit">Google Play</button>
+					</form>
+					<form action="#">
+						<button type="submit">App Store</button>
+					</form>
 				</div>
 			</div>
-        </div>
-    </div>
+		</div>
+
+	<video id="background" autoplay loop muted>
+		<source src="images/MINT/video.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+	</div>
+	
+	<div id="description">
+		<text>Screenshots</text>
+		<iframe width="90%" src="./images/MINT/cubemap.html"></iframe>
+		<p></p>
+	</div>
+	
+	
+	<div id="footer">
+		<p>A game by</p>&nbsp;<a href="http://chopralab.com" target="_blank">chopralab</a>
+	</div>
 </body>
 </html>

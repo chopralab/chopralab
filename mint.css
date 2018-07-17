@@ -18,15 +18,15 @@ h1 {
 }
 
 h2 {
-	font-size: 20vw;
+	font-size: 10vw;
 }
 
 h3 {
-	font-size: 10em;
+	font-size: 5vw;
 }
 
 h4 {
-	font-size: 5em;
+	font-size: 3vw;
 }
 
 text {
@@ -37,40 +37,64 @@ p {
 	font-size: 2.5vw;
 }
 
-@media screen and (min-width: 1200px) {
-	h1 {
-		font-size: 26.3em !important;
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 26em;
+    }
+	h2 {
+		font-size: 10em;
 	}
-	
+	h3 {
+		font-size: 5em;
+	}
+	h4 {
+		font-size: 3em;
+	}
+	text {
+		font-size: 3.75em;
+	}
+	p {
+		font-size: 1.9em;
+	}
+	#title > p {
+		    transform: translateY(-2em) !important;
+	}
 	button {
-		font-size: 3.15em !important;
+		font-size: 2.5em !important;
+		margin: 0.75em 0.75em !important;
+		padding: 0.75em 1.5em !important;
 	}
-  
-	p, a {
-		font-size: 1.87em !important;
+	#background {
+		min-width: 100vw !important;
 	}
 }
-
-@media screen and (min-width: 1000px) {
-	text {
-		font-size: 3.15em !important;
-	}
 	
-	button {
-		margin: 5vh 50px !important;
-		padding: 2.5vh 50px !important;
-	}
+}
+
+.vert-center {
+	display: inline-block;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 /* Body Elements */
 
-html, body {
-	margin: 0;	
+html, body {	
+    display: block;
+    position: absolute;
+	margin: 0;
 	padding: 0;
 	height: 100vh;
 	width: 100vw;
+
+	background-color: rgb(35,35,35);
+	
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	z-index: -999;
 }
 
 form {
@@ -79,7 +103,7 @@ form {
 
 button {
 	background: transparent;
-	font-size: 4vw;
+	font-size: 3vw;
 	display: inline-block;
 	border: 5px solid white;
 	border-radius: 1em;
@@ -87,8 +111,8 @@ button {
 	opacity: 0.5;
 	transition: opacity 0.25s;
 
-	margin: 5vh 5vw;
-	padding: 2.5vh 5vw;
+	margin: 2vh 2vw;
+	padding: 2vw 4vw;
 }
 
 button:hover {
@@ -100,46 +124,71 @@ button:hover {
 	display: flex;
     justify-content: center;
     align-items: center;
+	flex-wrap: wrap;
 }
 
-/* ID Elements */
+#background { /* Center and scale backgroung vid */
+    position: absolute;
+    min-height: 100%;
+    width: auto;
+    height: 57vw;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+    filter: brightness(40%);
+	z-index: -998;
+}
+
+iframe {
+	height: 70vh;
+}
+
+.vert-center {
+	display: inline-block;
+}
+
+/* Title Elements */
+
+#fullpage {
+	height: 100vh;
+	width: 100vw;
+	display: table-cell;
+	vertical-align: middle;
+}
 
 #title {
-	margin: 0.7em 5em 5em 5em
+	margin: auto 5vw auto 5vh;
 }
 
 #title > h1 {
 	display: block;
-	margin: -0.2em;
 }
 
 #title > p {
-	margin: 1em;
+	transform: translateY(-5vw);
 }
 
 #forms {
-	margin: 10vh 5vw 0 5vw;
+	display: inline-block;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-#background { /* Center and scale backgroung img */
-    position: fixed;
-    min-height: 100%;
-    width: auto;
-    height: 57vw;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -999;
-    filter: brightness(80%);
-    transition: filter 2s ease-in-out, transform 2s ease-in-out;
+/* Body Elements */
+
+#description {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	z-index: 2;
 }
+
+/*  Footer Stuff */
 
 #footer {
     text-align: center;
     opacity: 0.75;
-	padding-bottom: 0.5em;
+	padding-bottom: 5vh;
 }
-
 
 #footer a {
 	text-decoration-line: underline;
@@ -148,24 +197,4 @@ button:hover {
 
 #footer a:hover {
 	opacity: 1;
-}
-
-/* Vertical Centering */
-	
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.inner {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
