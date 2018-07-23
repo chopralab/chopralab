@@ -68,13 +68,11 @@ p {
 		min-width: 100vw !important;
 	}
 }
-	
-}
 
 .vert-center {
 	display: inline-block;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Body Elements */
@@ -97,63 +95,18 @@ html, body {
 	z-index: -999;
 }
 
-form {
-	display: inline;
-}
+/* Title Page */
 
-button {
-	background: transparent;
-	font-size: 3vw;
-	display: inline-block;
-	border: 5px solid white;
-	border-radius: 1em;
-	color: white;
-	opacity: 0.5;
-	transition: opacity 0.25s;
-
-	margin: 2vh 2vw;
-	padding: 2vw 4vw;
-}
-
-button:hover {
-	opacity: 1;
-    /* transform: translateY(-1.5px); */
-}
-
-.flex {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	flex-wrap: wrap;
-}
-
-#background { /* Center and scale backgroung vid */
+#background { /* Center and scale background vid */
     position: absolute;
-    min-height: 100%;
+    min-height: 100vh;
     width: auto;
     height: 57vw;
-	bottom: 0;
+	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
     filter: brightness(40%);
 	z-index: -998;
-}
-
-iframe {
-	height: 70vh;
-}
-
-.vert-center {
-	display: inline-block;
-}
-
-/* Title Elements */
-
-#fullpage {
-	height: 100vh;
-	width: 100vw;
-	display: table-cell;
-	vertical-align: middle;
 }
 
 #title {
@@ -170,16 +123,58 @@ iframe {
 
 #forms {
 	display: inline-block;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-top: 20vh;
 }
 
-/* Body Elements */
+button {
+	display: inline-block;
+	background: transparent;
+	
+	font-size: 3vw;
+	color: white;
+	opacity: 0.5;
+	transition: opacity 0.25s;
+	border: 5px solid white;
+	border-radius: 1em;
+	
+	margin: 2vh 2vw;
+	padding: 2vw 4vw;
+}
+
+button:hover {
+	opacity: 1;
+	background: #252525;
+	transition: background 0.25s;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    /* transform: translateY(-1.5px); */
+}
+
+/* Screenshots */
 
 #description {
-	margin-top: 3em;
-	margin-bottom: 3em;
+	background-color: rgb(35,35,35);
+	padding: 2em;
 	z-index: 2;
+}
+
+.flex {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex iframe {
+	width: 40vw;
+	height: 70vh;
+	margin: 1em;
+	flex-grow: 1;
+}
+
+#preview {
+	flex-grow: 2;
+	min-height: 80vh;
+	min-width: 80vw;
 }
 
 /*  Footer Stuff */
