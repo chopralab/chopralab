@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Chopra Lab</title>
+
+		<!-- Loading third party fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- AMP -->
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		<div class="site-content">
+			<header class="site-header collapsed-nav" data-bg-image="">
+				<div class="header-bar">
+					<a href="index.html" class="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">Chopra Lab</h1>
+							<small class="site-description"></small>
+						</div>
+					</a>
+					<nav class="main-navigation">
+						<button class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="home menu-item"><a href="index.html"><img src="images/home-icon.png" alt="Home"></a></li>
+							<li class="menu-item"><a href="research.html">Research</a></li>
+							<li class="menu-item"><a href="scientists.html">Scientists</a></li>
+							<li class="menu-item"><a href="publications.html">Publications</a></li>
+							<li class="menu-item"><a href="news/index.html">News</a></li>
+							<li class="menu-item"><a href="resources.html">Resources</a></li>
+							<li class="menu-item"><a href="photos.html">Photos</a></li>
+							<li class="menu-item"><a href="calendar.html">Calendar</a></li>
+							<li class="menu-item"><a href="contact.html">Contact Us</a></li>
+							<li class="menu-item"><a href="http://chopra-modules.science.purdue.edu/class/chm579/spring2018/" target="_blank">Teaching</a></li>
+						</ul>
+					</nav>
+					<div class="mobile-navigation"></div>
+				</div>
+			</header>
+
+			<div class="container content">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="breadcrumb">
+			
+						</div>
+						<div style="text-align: center;">
+							<h1>CANDOCK:</h1>
+							<h2>
+								<strong>C</strong>omputational
+								<strong>AN</strong>alytics based
+								<strong>DOCK</strong>ing</h2>
+						</div>
+						<div class="col-md-2">
+							<h1>Table of Contents</h1>
+							<p>
+								<a href="http://www.chopralab.com/resources/software/candock.html#overview">Overview</a>
+							</p>
+							<p>
+								<a href="http://www.chopralab.com/resources/software/candock.html#howdo">How it works</a>
+							</p>
+							<p>
+								<a href="http://www.chopralab.com/resources/software/candock.html#examples">Examples</a>
+							</p>
+							<p>
+								<a href="http://www.chopralab.com/resources/software/candock.html#tutorial">Tutorial</a>
+							</p>
+						</div>
+						<div class="col-md-10">
+							<img alt="candock_logo" height="250" src="images/candock/candock.svg" width="735">
+						</div>
+						<div class="col-md-12">
+							<h1>
+								<a id="overview"></a>﻿CANDOCK Overview</h1>
+							<p>CANDOCK is a fast, hierarchical, flexible, and knowledge-based set of docking tools designed to determine the interactions
+								a given small-molecule, nucleic acid, or protein has with an entire proteome. This tool is freely available for academic
+								use.</p>
+							<p>The CANDOCK software package is written in the C++-14 programing language and is distributed as a library and set of
+								tools linking against this library. Each tool in the software package is discussed below in the 'How it works' section.</p>
+							<h1>﻿How it works</h1>
+							<p>The design of CANDOCK has been carried out in a manner leading to a software package that is easy to use, fast, and accurate.
+								Users of the software need only to give a biological target of interest (protein, or nucleic acid, for example) and
+								the 3D structures of the ligand they are interested in docking.</p>
+							<p>CANDOCK does not need a binding site to be explicitly given and will predict a binding pocket using the ProBIS algorithm
+								if the user does not specify a pocket. Binding site prediction can be invoked directly using the&nbsp;
+								<strong>find_centroids</strong> tool. This feature is in contrast to other commercial and academic software which requires the
+								user to provide a binding pocket, simplifying the utilization of this software package.</p>
+							<p>Fragmentation of ligands is crucial to CANDOCK's speed and accuracy. Molecules of interest are broken down into rigid
+								fragments which possess no single bonds not confined in a ring structure. This process, along with atom typing and other
+								pre-docking steps is carried out by the
+								<strong>prep_fragments</strong> tool.</p>
+							<p>The
+								<strong>dock_fragments</strong> tool places rigid bodies in the binding pocket of interest, then rotates and translates these
+								fragments as to explore the rigid body space each fragment has within the search area. Once all the possible conformations
+								of a fragment are determined, the poses are clustered and scored using a knowledge-based potential and referred to as
+								ligand 'seeds'.</p>
+							<p>To obtain the final docked pose of the ligand, the maximum clique algorithm takes the seeds generated in the previous
+								step and determines all possible conformations that may occur in the binding pocket of the protein. This algorithm is
+								incredibly fast and can create millions of structures in seconds.&nbsp; Evaluation of each structure is carried out
+								to determine if the geometry of the structure is reasonable, resulting in a few thousand structures. Each structure
+								undergoes an energy minimization procedure and is presented to the user as the initial structure docked in the binding
+								pocket. This process is performed by the
+								<strong>link_fragments</strong> tool.</p>
+							<h1>
+								<a id="examples"></a>﻿Examples</h1>
+						</div>
+						<div class="col-md-6" style="text-align: justify;">
+							<img alt="Proteome wide docking using CANDOCK" height="313" src="images/candock/diabetes_snapshot.png"
+							 width="313">
+							<p>Above are the results of docking two leads (ML127 and ML351) to the entire human proteome. Specific classes of proteins
+								were selected due to their association with toxicity and the number of times each lead hits theses proteins is shown
+								above. This data, generated by CANDOCK can be used to determine the toxicity of compounds
+								<em>in silico</em>.</p>
+						</div>
+						<div class="col-md-6" style="text-align: justify;">
+							<img alt="Ebola docking" height="313" src="images/candock/candock_example2.png" width="393">
+							<p>The docking of unoprostone(C) and ubidecarenone(D) to Ebola protein GP2 (PDB identifier 1ebo, chain F) is shown above.
+								This docking was performed flexibly and showcases CANDOCK's ability to dock large molecules to large targets.</p>
+						</div>
+						<div class="col-md-12">
+							<h1>
+								<a id="tutorial"></a>﻿﻿Tutorial</h1>
+							<pre class="bash"><code>
+			cd $RCAC_SCRATCH
+			mkdir flt3
+			cd flt3
+			
+			dlrcsb.pl 4xuf &gt; 4xuf.pdb
+			grep '^ATOM' 4xuf.pdb | grep ' A ' &gt; receptor.pdb
+			
+			cp /depot/gchopra/data/seeds_data_base/cando-ligands-3d.mol2 ./ligands.mol2
+			
+			submit_candock_module.sh dock_fragments</code></pre>
+						</div>
+						<div class="row"></div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-12">
+							<div class="widget text-center">
+								<h3 class="widget-title">Our address</h3>
+								<strong>Purdue Institute for Drug Discovery</strong>
+								<address>720 Clinic Dr, West Lafayette, IN, 47907</address>
+                                                                <p> Office: DRUG 261 | Lab: DRUG 210</p>
+								<a href="tel:+1 765 496 6108"> (765)-496-6108</a> <br>
+								<a href="gchopra@purdue.edu">gchopra@purdue.edu</a>
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<div class="logos text-center">
+								<a href="https://www.purdue.edu/discoverypark/drug-discovery/" target="_blank">
+									<img alt="Affiliate" height="125" src="images/Drug Discovery logo.jpg" width="157">
+								</a>
+								<a href="https://www.cancerresearch.purdue.edu" target="_blank">
+									<img alt="Affiliate" height="137" src="images/PCCR logo.svg" width="282">
+								</a>
+								<a href="https://www.purdue.edu/discoverypark/pillars/integrative-neuroscience-center/" target="_blank">
+									<img alt="Affiliate" height="118" src="images/PIIN.png" width="234">
+								</a>
+								<a href="https://www.purdue.edu/discoverypark/pillars/pi4d/" target="_blank">
+									<img alt="Affiliate" height="106" src="images/information_immunology_logo.jpg" width="200">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="widget text-center">
+								<h3 class="widget-title">Social media</h3>
+								<p>Feel free to follow our lab on twitter and watch videos on our youtube channel</p>
+								<div class="social-links">
+									
+									<a href="https://twitter.com/chopralab?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+						
+									<a href="https://www.youtube.com/channel/UCDmf3igPapcwupzUKtpPVxQ"><i class="fa fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<p class="text-center">
+								Copyright © 2018, Gaurav Chopra Laboratory
+									</br>
+								<a target="_blank" href="https://purdue.edu/">Purdue University</a> | Contact the College of Science at
+								<a href="mailto:sciencehelp@purdue.edu">sciencehelp@purdue.edu</a> for trouble accessing this page.
+									</br>
+								Designed by
+								<a href="http://www.vandelaydesign.com/" title="Designed by VandelayDesign.com" target="_blank">VandelayDesign.com</a>. All rights reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<!-- AMP for youtube -->
+		<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+		
+	</body>
+
+</html>
