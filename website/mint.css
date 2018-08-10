@@ -73,6 +73,7 @@ p {
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
+	height: 100vh;
 }
 
 /* Body Elements */
@@ -126,8 +127,8 @@ html, body {
 	margin-top: 20vh;
 }
 
-button {
-	display: inline-block;
+a.button {
+    display: inline-block;
 	background: transparent;
 	
 	font-size: 3vw;
@@ -141,7 +142,7 @@ button {
 	padding: 2vw 4vw;
 }
 
-button:hover {
+a.button:hover {
 	opacity: 1;
 	background: #252525;
 	transition: background 0.25s;
