@@ -1,0 +1,5 @@
+1. In _posts, create a file with the exact format of "%Y-%M-%D-title.markdown"
+2. In that file, copy the header block (From the first line with 3 dashes to the last line) from past posts
+3. Use markdown to write your post, here's a handy cheat sheet below:
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+4. In Command Prompt, run GenerateJekyll.sh

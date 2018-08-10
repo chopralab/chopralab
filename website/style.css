@@ -328,7 +328,7 @@ figcaption {
   background-size: cover;
 }
 
-.gCal iframe {
+.gCal iframe, .news {
   display: block;
   width: 95%;
   height: 80vh;
