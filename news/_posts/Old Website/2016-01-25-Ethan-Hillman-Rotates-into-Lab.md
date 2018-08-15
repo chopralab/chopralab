@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Chopra Lab welcomes Jonathan Fine, Jessup Dowell, and Travis Lantz
+title: Ethan Hillman Rotates into Lab
 ---
-Jonathan Fine is a Chemistry graduate student here on a Lynn fellowship while Jessup Dowell and Travis Lantz are both Undergraduates in Chemistry.
-![Jonathan Fine]({{ "images/jonathan_fine.jpg" | absolute_url }})
-![Jessup Dowell]({{ "images/Jessup.JPG" | absolute_url }})
-![Travis Lantz]({{ "images/travis.JPG" | absolute_url }})
+Ethan Hillman (PULSe graduate student) will be a member of our lab until March 2016 as a part of the [PULSe graduate program](https://www.purdue.edu/gradschool/pulse/).
+
+![Ethan_Lab]({{ "images/Ethan_Lab.jpg" | absolute_url }})

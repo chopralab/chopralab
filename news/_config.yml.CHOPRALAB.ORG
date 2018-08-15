@@ -15,6 +15,12 @@ markdown: "kramdown"
 theme: "minima"
 plugins:
   - jekyll-feed
+  
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
