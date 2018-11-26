@@ -92,7 +92,6 @@ html, body {
     margin-left: auto;
     margin-right: auto;
 	overflow-x: hidden;
-	overflow-y: scroll;
 	z-index: -999;
 }
 
@@ -144,8 +143,8 @@ a.button {
 
 a.button:hover {
 	opacity: 1;
-	background: #252525;
-	transition: background 0.25s;
+	/* background: #252525;
+	transition: background 0.25s; */
 	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     /* transform: translateY(-1.5px); */
 }
@@ -178,6 +177,16 @@ a.button:hover {
 	min-width: 80vw;
 }
 
+.gifs {
+	width: 50vw;
+	height: auto;
+}
+
+.models {
+	width: 35vw;
+	height: auto;
+}
+
 /*  Footer Stuff */
 
 #footer {
@@ -193,4 +202,14 @@ a.button:hover {
 
 #footer a:hover {
 	opacity: 1;
+}
+
+.logo {
+	height: 10em;
+}
+
+/* Utilities */
+
+.padding {
+	padding: 1em;
 }
