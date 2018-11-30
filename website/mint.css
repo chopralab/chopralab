@@ -73,12 +73,11 @@ p {
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100vh;
 }
 
 /* Body Elements */
 
-html, body {	
+html, body {
     display: block;
     position: absolute;
 	margin: 0;
@@ -87,7 +86,7 @@ html, body {
 	width: 100vw;
 
 	background-color: rgb(35,35,35);
-	
+
 	text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -98,14 +97,14 @@ html, body {
 /* Title Page */
 
 #background { /* Center and scale background vid */
-    position: absolute;
-    min-height: 100vh;
-    width: auto;
-    height: 57vw;
+	position: absolute;
+	min-height: 100%;
+	width: auto;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
-    filter: brightness(40%);
+	background-size: 100% 100%;
+    	filter: brightness(40%);
 	z-index: -998;
 }
 
@@ -123,20 +122,21 @@ html, body {
 
 #forms {
 	display: inline-block;
-	margin-top: 20vh;
+	margin-top: -5vh;
+	margin-bottom: 5vh;
 }
 
 a.button {
     display: inline-block;
 	background: transparent;
-	
+
 	font-size: 3vw;
 	color: white;
 	opacity: 0.5;
 	transition: opacity 0.25s;
 	border: 5px solid white;
 	border-radius: 1em;
-	
+
 	margin: 2vh 2vw;
 	padding: 2vw 4vw;
 }
@@ -178,8 +178,10 @@ a.button:hover {
 }
 
 .gifs {
-	width: 50vw;
+	width: 33vw;
 	height: auto;
+	border: 0.3em solid white;
+	border-radius: 3em;
 }
 
 .models {
@@ -205,7 +207,7 @@ a.button:hover {
 }
 
 .logo {
-	height: 10em;
+	height: 15em;
 }
 
 /* Utilities */
