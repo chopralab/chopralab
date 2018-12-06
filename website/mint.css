@@ -164,6 +164,11 @@ a.button:hover {
 	flex-wrap: wrap;
 }
 
+iframe {
+	border: 0.3em solid white;
+	border-radius: 3em;
+}
+
 .flex iframe {
 	width: 40vw;
 	height: 70vh;
@@ -187,6 +192,8 @@ a.button:hover {
 .models {
 	width: 35vw;
 	height: auto;
+	border: 0.3em solid white;
+	border-radius: 3em;
 }
 
 /*  Footer Stuff */
